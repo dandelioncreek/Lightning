@@ -24,7 +24,8 @@ void draw()
   line(320, 250, 290, 450);
   line(350, 250, 350, 400);
   line(260, 250, 270, 378);
-  arc(260, 250, 320, 320, radians(180), radians(360), CHORD);
+  arc(260, 250, 320, 320, radians(180), radians(360));
+  line(100, 250, 420, 250);
   if (y < height) {
     int x1 = x + (int)(Math.random()*20-10);
     int y1 = y + (int)(Math.random()* 20 -10);
@@ -59,7 +60,7 @@ void mousePressed()
   c = (int)(Math.random()*320 + 90);
 }
 
-void lightning(float x, float y, float x1, float y1) {
+void lightning(int x, int y, int x1, int y1) {
   strokeWeight(3);
   line(x, y, x1, y1);
 }
